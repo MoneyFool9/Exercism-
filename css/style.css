@@ -73,7 +73,7 @@ div {
     left: 5px;
     border-radius: 8px;
     box-shadow: 0 0 #0000, 0 0 #0000,0px 6px 28px 4px rgba(79,114,205,0.5);
-    transition: all .7s;
+    transition: all .2s;
 }
 .triangle {
     display: none;
@@ -90,6 +90,7 @@ div {
 }
 .learn:hover .learn-list {
     display: block;
+
 }
 .learn:hover .triangle {
     display: block;

@@ -1,0 +1,415 @@
+/* 移动端适配 */
+@media (max-width :992px) {
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+.nav-left ul{
+    display: none;
+}
+.wrap {
+    max-width: 960px;
+}
+.nav-wrap {
+    max-width: 960px;
+    padding: 0 16px;
+}
+.header-wrap {
+    max-width: 960px;
+}
+.wrap1 {
+    flex-direction: column;
+    max-width: 960px;
+    padding: 0 5px;
+}
+.wrap2 {
+    max-width: 960px;
+    padding: 0 16px;
+}
+.wrap3 {
+    max-width: 960px;
+}
+/* header样式开始 */
+
+.header-img {
+    display: none;
+}
+
+.header-left {
+    align-items: center;
+}
+
+.left-middle {
+    text-align: center;
+}
+
+/* header样式结束 */
+
+/* 编程语言按钮 */
+.container {
+    padding: 0 70px;
+    box-sizing: border-box;
+    width: 95%;
+    gap: 50px;
+}
+.middle {
+    max-width: 960px;
+}
+
+.middle-up {
+    margin-bottom: 36px;
+}
+
+.up-left,.down-right {
+    width: 100%;
+}
+.up-img,.down-img {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.up-block {
+    border-radius: 8px;
+}
+.img2 {
+    left: -3px;
+}
+
+.img3 {
+    left: -28px;
+}
+
+.block-text {
+    /* width: 308px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 24px;
+}
+.up-right {
+    padding-top: 30px;
+    box-sizing: border-box;
+    max-height: 1440px;
+    margin: 0 auto;
+}
+.up-right>img {
+    width: 100%;
+    height: auto;
+
+}
+/* 第二部分内容开始 */
+
+.down-left {
+    margin-right: 8px;
+}
+.bottom {
+    margin-top: 28px;
+}
+/* 第二部分内容结束 */
+/* 页脚第一部分开始 */
+.bottom-part1-wrap {
+    flex-direction: column;
+}
+.part1-left {
+    width: 605px;
+}
+.part1-left-info {
+    text-align: start;
+    color: white;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 640px;
+}
+.part1-right {
+    margin-top: 20px;
+}
+
+/* 页脚第一部分结束 */
+/* 页脚第二部分开始 */
+.bottom-part2-top>div {
+    gap: 20px;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-part3 {
+    width: 100%;
+    height: 563px;
+}
+.extra {
+    gap: 200px;
+}
+
+/* 页脚第二部分结束 */
+/* copy样式开始 */
+
+
+.part4-text>a {
+    font-size: 20px;
+}
+
+/* copy样式结束 */
+}
+
+
+/* 小屏手机适配 */
+
+@media(max-width: 810px) {
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: #fff;
+    }
+.nav-left ul {
+        display: none;
+    }
+
+    .wrap {
+        max-width: 700px;
+    }
+
+    .nav-wrap {
+        max-width: 700px;
+        padding: 0 10px;
+    }
+    .header-wrap {
+        max-width: 700px;
+        flex-direction: column;
+    }
+    .wrap1 {
+        max-width: 960px;
+        padding: 0 5px;
+    }
+
+    .wrap2 {
+        max-width: 700px;
+        padding: 0 16px;
+        flex-direction: column;
+    }
+
+    .wrap3 {
+        max-width: 700px;
+    }
+
+    /* header样式开始 */
+    .header-left {
+        margin-top: 48px;
+        align-items: flex-start;
+    }
+    .header-img {
+        display: block;
+        position: absolute;
+        left: 32px;
+        top: 88px;
+    }
+    .header-img>img {
+        width: 80px;
+        height: auto;
+  
+    }
+    .left-top {
+        text-align: left;
+        font-size: 40px;
+    }
+    .left-middle {
+        text-align: left;
+        line-height: 1.5;
+    }
+    .left-bottom {
+        padding: 8px 48px 32px 32px;
+    }
+    .left-bottom::after {
+        position: absolute;
+        right: auto;
+        top: auto;
+        bottom: -24px;
+        left: 50%;
+        margin-left: -24px;
+    }
+    /* header样式结束 */
+
+    /* 编程语言按钮 */
+    .container {
+        padding: 0 70px;
+        box-sizing: border-box;
+        width: 95%;
+        gap: 50px;
+    }
+
+    .middle {
+        max-width: 960px;
+    }
+
+    .middle-up {
+        margin-bottom: 36px;
+    }
+
+    .up-left,
+    .down-right {
+        width: 100%;
+    }
+
+    .up-img,
+    .down-img {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .up-block {
+        border-radius: 8px;
+    }
+
+    .img2 {
+        left: -3px;
+    }
+
+    .img3 {
+        left: -28px;
+    }
+
+    .block-text {
+        /* width: 308px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 24px;
+    }
+
+    .up-right {
+        padding-top: 30px;
+        box-sizing: border-box;
+        max-height: 1440px;
+        margin: 0 auto;
+    }
+
+    .up-right>img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    /* 第二部分内容开始 */
+
+    .down-left {
+        margin-right: 8px;
+    }
+
+    .bottom {
+        margin-top: 28px;
+    }
+.up-card3,.down-card3{
+    margin-left: 16px;
+    flex-direction: column;
+}
+.card {
+    width: 100%;
+    max-width: 760px;
+}
+    /* 第二部分内容结束 */
+    /* 页脚第一部分开始 */
+    .bottom-part1-wrap {
+        flex-direction: column;
+    }
+
+    .part1-left {
+        width: 605px;
+    }
+
+    .part1-left-info {
+        text-align: start;
+        color: white;
+        font-size: 18px;
+        line-height: 150%;
+        max-width: 640px;
+    }
+
+    .part1-right {
+        margin-top: 20px;
+    }
+
+    /* 页脚第一部分结束 */
+    /* 页脚第二部分开始 */
+    .bottom-part2-top>div {
+        gap: 20px;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-part3 {
+        width: 100%;
+        height: 563px;
+    }
+
+    .extra {
+        gap: 200px;
+    }
+
+    /* 页脚第二部分结束 */
+    /* copy样式开始 */
+
+.part4-info {
+    flex-direction: column;
+    gap: 20px;
+}
+    .part4-text>a {
+        font-size: 20px;
+    }
+
+    /* copy样式结束 */
+}
+@media (min-width: 810px) and (max-width:1232px){
+
+.container {
+    gap: 70px;
+}
+}
+@media (min-width: 300px) and (max-width:800px) {
+.navigation {
+        width: 100%;
+        max-width: 700px;
+    }
+    .header-left {
+            margin-top: 128px;
+            align-items: flex-start;
+        }
+    .middle-btn {
+        flex-direction: column;
+        gap: 20px;
+    }
+.middle-btn>div{
+    width: 90%;
+    height: auto;
+}
+.left-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px 16px 15px;
+}
+.up-text,.down-text {
+    margin-top: 0;
+}
+.part1-right {
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+}
+.part1-right-btn1,
+.part1-right-btn2{
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+}
+.part1-right-btn2 {
+    margin-right: 0;
+}
+}

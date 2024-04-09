@@ -3,10 +3,12 @@ body {
     /* background-image: linear-gradient(180deg,#e1ebff 70px,rgba(225,235,255,0) 290px); */
     font-size: 14px;
     line-height: 1;
-    overflow: auto scroll;
+    overflow: hidden scroll;
     overscroll-behavior-y: none;
     scroll-behavior: smooth;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-height: 100%;
 }
@@ -26,8 +28,9 @@ div {
 }
 .wrap {
     width: 100%;
+    max-width: 1440px;
     max-height: 1440px;
-    /* padding: 0 32px;    为什么突然不需要了？ */
+    margin: 0 auto;
 }
 
 .nav-wrap {
@@ -134,7 +137,6 @@ div {
 .list-text2 {
   color: #130B43;
   font-size: 14px;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 /* 导航下拉栏样式结束 */
@@ -178,7 +180,6 @@ div {
 /* header样式开始 */
 .header {
     width: 100%;
-    height: 435px;
     padding: 40px 0 56px;
     background: linear-gradient(180deg,rgba(251,251,255,0) 79.36%,#f4f4fd 100%),linear-gradient(180deg,#fafaff 0,rgba(250,250,255,.678) 24.48%,rgba(250,250,255,0) 77.6%,#fafaff 100%),url(/exercism/images/bg.svg),#fafaff;
     background-position: -190px;
@@ -193,8 +194,6 @@ div {
     padding: 0 32px;
 }
 .header-left {
-    /* width: auto; */
-    /* border: 1px solid red; */
     height: 435px;
     display: flex;
     flex-direction: column;
@@ -207,6 +206,7 @@ div {
     font-size: 48px;
     font-weight: 700;
     line-height: 1.25;
+    margin-top: 30px;
     margin-bottom: 12px;
 }
 .left-middle {
@@ -219,6 +219,7 @@ div {
     margin-bottom: 24px;
 }
 .middle-btn{
+    width: 100%;
     display: flex;
     margin-bottom: 40px;
 }
@@ -254,6 +255,7 @@ div {
     color: rgb(59,42,147);
 }
 .left-bottom {
+    box-sizing: border-box;
     background-clip: padding-box,border-box;
     background-origin: border-box;
     background-color: rgb(250,250,255);
@@ -284,10 +286,9 @@ div {
     top: 50%;
 }
 .bottom-text {
-    font-size: 16px;
-    line-height: 160%;
+    line-height: 120%;
     text-align: start;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 .learn-more {
     font-size: 18px;
@@ -295,20 +296,16 @@ div {
     color: #20f;
     white-space: nowrap;
     cursor: pointer;
-
 }
+/* header样式结束 */
+/* banner样式开始 */
 .banner {
     width: 100%;
-    height: 742px;
     padding-top: 56px;
     margin-bottom: 56px;
 }
-.banner-wrap {
-    /* padding: 0 32px; */
-}
 .banner-top {
     width: 100%;
-    height: 269.5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -337,35 +334,26 @@ div {
 }
 .banner-middle {
     width: 100%;
-    height: 390px;
     margin-bottom: 64px;
 }
 .down {
     width: 124px;
-    height: 28px;
 }
 .container {
     margin-left: 32px;
     margin-right: 32px;
     width: 95%;
-    height: 390px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 90px;
 }
-.banner-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner-btn>div{
+.container>div{
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 186.667px;
-    height: 138px;
     padding: 24px 8px;
     transition: transform .2s ease-out;
     text-transform: capitalize;
@@ -490,15 +478,20 @@ div {
     line-height: 16px;
     filter: invert(49%) sepia(99%) saturate(6416%) hue-rotate(225deg) brightness(94%) contrast(93%);
 }
-
+/* banner样式结束 */
+/* 第一部分内容开始 */
 .middle {
     width: 100%;
 }
 
 .wrap1 {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 72px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 .middle-up {
     background: linear-gradient(180deg,#fff 80%,#fbfbff);
@@ -512,16 +505,17 @@ div {
 .up-left ,.down-right{
     display: flex;
     flex-direction: column;
-    width: 612.667px;
     height: 100%;
-    margin-left: 32px;
+    padding: 0 32px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .up-text,.down-text {
     font-size: 31px;
     font-weight: 700;
     line-height: 140%;
     color: #130B43;
-    margin-top: 16px;
+    margin-top: 66px;
     text-align: start;
 }
 .up-img,.down-img {
@@ -540,8 +534,6 @@ div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 556.667px; */
-    /* height: 78.2px; */
     padding: 12px 28px 24px;
     border-radius: 8px;
     background-color: white;
@@ -571,7 +563,6 @@ div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 24px;
 }
 .block-text1 {
     color: #130B43;
@@ -595,15 +586,18 @@ div {
     margin-top: 16px;
 }
 .up-right  {
-    width: 555px;
-    height: 434px;
-    margin: 96px 0 0 80px;
-    box-shadow: 0 0 #000, 0 0 #000, 0 4px 42px 0 rgba(79,114,205,.3);    
-    /* margin-right: 32px; */
+    width: 95%;
+    height: auto;
+    max-height: 538px;
+}
+.up-right1 {
+    width: 95%;
+    height: auto;
 }
 .up-right >img {
     width: 100%;
-
+    height: auto;
+    box-shadow: 0 0 #000, 0 0 #000, 0 4px 42px 0 rgba(79, 114, 205, .3);
 }
 
 .up-card3,.down-card3 {
@@ -611,6 +605,7 @@ div {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 64px;
+    margin-top: 88px;
 }
 .card {
     display: flex;
@@ -633,33 +628,41 @@ div {
     text-align: start;
     margin-right: 32px;
 }
-
+/* 第一部分内容结束 */
+/* 第二部分内容开始 */
 .middle-down {
     width: 100%;
-    /* height: 224.4px; */
     display: flex;
     flex-direction: column;
 }
 .wrap2 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     padding-left: 32px;
     padding-right: 32px;
     margin-bottom: 64px;
+    box-sizing: border-box;
 }
 .down-left {
     margin-right: 128px;
 }
 .bigimg {
-    width: auto;
+    width: 95%;
+    max-width: 1440px;
     height: auto;
-    margin: 0 32px 60px 32px;
+    margin: 0 auto;
 }
 .wrap3 {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
+    margin: 0 auto;
 }
 .bottom {
     width: 100%;
@@ -676,7 +679,6 @@ div {
     width: 100%;
     padding-top: 24px;
     padding-bottom: 48px;
-    height: 228.2px;
     background: linear-gradient(180deg,#271b72 0,rgba(39,27,114,0) 48.1%,#271b72 100%),linear-gradient(0deg,#271b72,#271b72);
     border-bottom: 3px solid #2e57e8;
 }
@@ -685,6 +687,8 @@ div {
     height: 15px;
     background-color: #2e57e8;
 }
+/* 第二部分内容结束 */
+/* 页脚第一部分开始 */
 .part1-left {
     display: flex;
     flex-direction: column;
@@ -714,6 +718,11 @@ div {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    width: 500px;
+}
+.bottom-part1-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 .part1-right-btn1,.part1-right-btn2 {
     padding: 2px 24px;
@@ -745,9 +754,10 @@ div {
 .part1-right-btn2:hover {
     box-shadow: 0 4px 8px rgba(79,114,205,.6);
 }
+/* 页脚第一部分结束 */
+/* 页脚第二部分开始 */
 .bottom-part2 {
     width: 100%;
-    /* height: 350px; */
     background: #130B43
 }
 .bottom-part2-top {
@@ -758,9 +768,8 @@ div {
     margin-top: 50px;
 }
 .bottom-part2-top>div {
-    /* border: 1px solid red; */
+    margin-left: 16px;
     width: 170px;
-    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -820,7 +829,6 @@ div {
 }
 .bottom-part3 {
     width: 100%;
-    height: 563px;
     background: #130B43;
     display: flex;
     flex-direction: column;
@@ -845,36 +853,39 @@ div {
     align-items: flex-start;
     color: #fff;
     gap: 9px;
-    width: 176px;
 }
 .extra {
-    width: 1216px;
-    height: 440px;
-    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    width: 93%;
+    height: auto;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    box-sizing: border-box;
 }
+/* 页脚第二部分结束 */
+/* copy样式开始 */
 .bottom-part4 {
     width: 100%;
-    /* height: 40px; */
     background: #130B43
 }
 .part4-text {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-}
-.part4-text>p {
-    color: rgb(200 213 239);
-    font-size: px;
-    line-height: 160%;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: start;
 }
 .part4-text>a {
+    text-decoration: inherit;
     border-bottom-width: 1px;
     border-color: rgb(200 213 239);
     color: rgb(250 250 255);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.3em;
     text-decoration-line: underline;
     line-height: 160%;
 }
@@ -890,7 +901,4 @@ div {
     font-weight: 600;
     font-size: 16px;
 }
-/* .header-img {
-    display: grid;
-} */
-/* header样式结束 */
+/* copy样式结束 */
